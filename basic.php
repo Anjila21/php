@@ -8,13 +8,15 @@ class Customer //class class_name
    //method
 function setdetail($name,$address,$phone)
 {
-    this->customer =$name.this->customer=$address.this->customer=$phone;
+    $this->cust_name = $name;
+    $this->cust_address = $address;
+    $this->cust_phone = $phone;
 }
 function getdetail()
 {
-    return this->$cust_name.this->$cust_address.this->$cust_phone;
+    return $this->cust_name . $this->cust_address . $this->cust_phone;
 }
 }
 $c1= new Customer();
-$c1->setdetail("Anjila","kalanki",9843045160)
+$c1->setdetail("abc","xyz",12345678);
 echo $c1->getdetail();
